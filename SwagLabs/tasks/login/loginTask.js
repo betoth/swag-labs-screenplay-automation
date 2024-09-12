@@ -1,5 +1,5 @@
 const { EnterCredentials } = require('../../interactions/EnterCredentials');
-const { Click } = require('../../interactions/Click');  // Certifique-se de importar Click corretamente
+const { Click } = require('../../interactions/Click');
 const { LoginPage } = require('../../pages/loginPage');
 const { BrowseTheWeb } = require('../../abilities/BrowseTheWeb');
 

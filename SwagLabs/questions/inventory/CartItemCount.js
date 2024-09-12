@@ -1,4 +1,4 @@
-const { BrowseTheWeb } = require('../../abilities/BrowseTheWeb');  // Adicionar a importação correta
+const { BrowseTheWeb } = require('../../abilities/BrowseTheWeb');
 
 class CartItemCount {
     async performAs(actor) {

@@ -11,7 +11,7 @@ class Click {
 
     async performAs(actor) {
         const browse = actor.abilityTo(BrowseTheWeb);
-        return browse.page.click(this.selector);  // Realiza o clique no seletor especificado
+        return browse.page.click(this.selector);
     }
 }
 

@@ -1,4 +1,4 @@
-const { BrowseTheWeb } = require('../../abilities/BrowseTheWeb');  // Usar sempre 'SwagLabs' com o 'S' maiúsculo
+const { BrowseTheWeb } = require('../../abilities/BrowseTheWeb');
 
 class ErrorMessage {
     async performAs(actor) {
