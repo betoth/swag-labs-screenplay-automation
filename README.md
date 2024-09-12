@@ -7,15 +7,6 @@ This is a test automation project for the **Swag Labs** site, using the **Playwr
 
 The website being tested is [Swag Labs](https://www.saucedemo.com), which simulates an e-commerce platform. The tests focus on user login, adding items to the cart, and other user interactions.
 
-### Credentials for Testing:
-
-- **Accepted usernames**:
-    - `standard_user`
-    - `locked_out_user`
-    - `problem_user`
-    - `performance_glitch_user`
-- **Password for all users**: `secret_sauce`
-
 ## Project Structure
 
 This project is structured according to the **Screenplay Pattern**, which organizes the code into reusable components. Here's an overview of the folder structure:
@@ -111,20 +102,3 @@ To generate and view an HTML report:
 ```bash
 npx playwright show-report
 ```
-
-### Running with Trace and Video Recording
-
-The project is configured to record **trace** and **video** only in case of test failures. You can view the trace with the following command:
-
-```bash
-npx playwright show-trace test-results/<trace-file>.zip
-```
-
-## Configuring Playwright
-
-All Playwright configurations can be customized in the `playwright.config.js` file.
-
-- **Trace**: Set to `'retain-on-failure'` to capture trace files only for failed tests.
-- **Video**: Set to `'retain-on-failure'` to capture videos only when tests fail.
-- **Retries**: You can configure the number of retries in case a test fails.
-- **Browsers**: Tests can be run in **Chromium**, **Firefox**, and **Webkit**. You can modify the `projects` section in `playwright.config.js` to run tests in different browsers.
